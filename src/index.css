@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --color-bg: #162a1a;
+--color-surface: #2a4a30;
+--color-border: #3d7048;
+--color-accent: #5a9e6a;
+--color-highlight: #7ec98a;
+--color-text-1: #edf4ee;
+--color-text-2: #c8deca;
+--color-text-3: #b0cfb5;
+--color-text-muted: #8ab48f;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text-2);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
