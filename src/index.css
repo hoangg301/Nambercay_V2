@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --color-bg: #162a1a;
 --color-surface: #2a4a30;
