@@ -109,7 +109,7 @@ function Home() {
             <div className="why-card">
               <div className="why-card-top">
                 <span className="why-icon">✏️</span>
-                <span className="why-card-title">Thiết kế</span>
+                <span className="why-card-title">Thiết Kế</span>
               </div>
               <p className="why-card-body">
                   Bạn chỉ cần một ý tưởng.<br />
@@ -120,7 +120,7 @@ function Home() {
             <div className="why-card">
               <div className="why-card-top">
                 <span className="why-icon">🌱</span>
-                <span className="why-card-title">Thủ Công</span>
+                <span className="why-card-title">Chất Liệu</span>
               </div>
               <p className="why-card-body">
                   Đất thật. Đá thật. Rêu thật.<br />
