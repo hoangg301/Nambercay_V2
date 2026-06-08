@@ -53,6 +53,8 @@ function Home() {
         id="features"
         className="features"
       >
+
+        {/* Feature 1 */}
         <div className="feature-block">
           <div className="feature-header">
             <h2 className="feature-title">Tác phẩm nổi bật</h2>
@@ -83,6 +85,49 @@ function Home() {
                 </button>
               </div>
             ))}
+          </div>
+        </div>
+
+        {/* Feature 2 */}
+        <div className="feature-block">
+          <div className="feature-header">
+            <h2 className="feature-title">Điều Làm Nên Nambercay</h2>
+          </div>
+
+          <div className="why-card-container">
+            <div className="why-card">
+              <div className="why-card-top">
+                <span className="why-icon">🤲</span>
+                <span className="why-card-title">Thủ Công</span>
+              </div>
+              <p className="why-card-body">
+                  Không có sản phẩm thứ hai.<br />
+                  Vì mỗi thế giới thu nhỏ ấy đều là độc nhất.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <div className="why-card-top">
+                <span className="why-icon">✏️</span>
+                <span className="why-card-title">Thiết kế</span>
+              </div>
+              <p className="why-card-body">
+                  Bạn chỉ cần một ý tưởng.<br />
+                  Dù mơ hồ - Nambercay sẽ biến nó thành thật.
+              </p>
+            </div>
+
+            <div className="why-card">
+              <div className="why-card-top">
+                <span className="why-icon">🌱</span>
+                <span className="why-card-title">Thủ Công</span>
+              </div>
+              <p className="why-card-body">
+                  Đất thật. Đá thật. Rêu thật.<br />
+                  Không có gì giả tạo ở đây.<br />
+                  Chỉ có thiên nhiên là đang thực sự sống.
+              </p>
+            </div>
           </div>
         </div>
       </section>
