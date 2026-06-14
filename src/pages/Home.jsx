@@ -2,14 +2,27 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import heroImg from "../assets/hero-img.webp";
-import feature1 from "../assets/feature1.webp";
-import feature2 from "../assets/feature2.webp";
-import feature3 from "../assets/feature3.webp";
+
 
 const highlights = [
-  { id: 1, name: "Linh Mộc Viên", img: feature1 },
-  { id: 2, name: "Bạch Lộc U Lâm", img: feature2 },
-  { id: 3, name: "Vạn Gia Đăng Hỏa", img: feature3 },
+  { 
+    id: 1, 
+    name: "Linh Mộc Viên", 
+    categoryLabel: "Tứ Giác",
+    img: new URL('../assets/products/tu-giac/t1-a.webp', import.meta.url).href, 
+  },
+  { 
+    id: 2, 
+    name: "Bạch Lộc U Lâm",
+    categoryLabel: "Đa Giác", 
+    img: new URL('../assets/products/da-giac/d1-a.webp', import.meta.url).href, 
+  },
+  { 
+    id: 3, 
+    name: "Vạn Gia Đăng Hỏa", 
+    categoryLabel: "Bán Cạn",
+    img: new URL('../assets/products/ban-can/b1-a.webp', import.meta.url).href, 
+  },
 ];
 
 function Home() {
@@ -17,7 +30,9 @@ function Home() {
   
   return (
     <main>
+      
       {/* Hero Section */}
+      
       <section className="hero">
         <img 
           src={heroImg} 
@@ -49,12 +64,14 @@ function Home() {
       </section>
 
       {/* Features Section */}
+      
       <section
         id="features"
         className="features"
       >
 
         {/* Feature 1 */}
+        
         <div className="feature-block">
           <div className="feature-header">
             <h2 className="feature-title">Tác phẩm nổi bật</h2>
@@ -74,6 +91,11 @@ function Home() {
                     loading="lazy"
                   />
                 </div>
+                
+                {activeId === highlight.id && (
+                  <span className="card-category">--- {highlight.categoryLabel} ---</span>
+                )}
+
                 <button
                   className={`card-btn ${activeId === highlight.id ? "active" : ""}`}
                   onClick={() => setActiveId(activeId === highlight.id ? 0 : highlight.id)}
@@ -89,6 +111,7 @@ function Home() {
         </div>
 
         {/* Feature 2 */}
+        
         <div className="feature-block">
           <div className="feature-header">
             <h2 className="feature-title">Điều Làm Nên Nambercay</h2>
