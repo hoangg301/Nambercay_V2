@@ -7,9 +7,9 @@ import feature2 from "../assets/feature2.webp";
 import feature3 from "../assets/feature3.webp";
 
 const highlights = [
-  { id: 1, name: "Cổ Mộc Trận", img: feature1 },
-  { id: 2, name: "Huyết Liên Thánh Địa", img: feature2 },
-  { id: 3, name: "Ảo Cảnh Thiền Tự", img: feature3 },
+  { id: 1, name: "Linh Mộc Viên", img: feature1 },
+  { id: 2, name: "Bạch Lộc U Lâm", img: feature2 },
+  { id: 3, name: "Vạn Gia Đăng Hỏa", img: feature3 },
 ];
 
 function Home() {
@@ -130,6 +130,9 @@ function Home() {
             </div>
           </div>
         </div>
+
+        {/* Feature 3 */}
+        
       </section>
     </main>
   );
