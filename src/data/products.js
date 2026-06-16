@@ -5,6 +5,7 @@ const productsData = [
     {
         id: "r1",
         name: "Tịnh Độ Linh Hoa",
+        slug: "tinh-do-linh-hoa",
         category: "reu-bao-ton",
         categoryLabel: "Rêu Bảo Tồn",
         images: [
@@ -16,6 +17,7 @@ const productsData = [
     {
         id: "r2",
         name: "Thiên Hoa Ái Tình",
+        slug: "thien-hoa-ai-tinh",
         category: "reu-bao-ton",
         categoryLabel: "Rêu Bảo Tồn",
         images: [
@@ -27,6 +29,7 @@ const productsData = [
     {
         id: "r3",
         name: "Xích Hoa Thần Lộc",
+        slug: "xich-hoa-than-loc",
         category: "reu-bao-ton",
         categoryLabel: "Rêu Bảo Tồn",
         images: [
@@ -38,6 +41,7 @@ const productsData = [
     {
         id: "r4",
         name: "Huyền Lam Linh Cảnh",
+        slug: "huyen-lam-linh-canh",
         category: "reu-bao-ton",
         categoryLabel: "Rêu Bảo Tồn",
         images: [
@@ -52,9 +56,9 @@ const productsData = [
     {
         id: "t1",
         name: "Linh Mộc Viên",
+        slug: "linh-moc-vien",
         category: "tu-giac",
         categoryLabel: "Tứ Giác",
-
         images: [
             "tu-giac/t1-a.webp",
             "tu-giac/t1-b.webp",
@@ -64,6 +68,7 @@ const productsData = [
     {
         id: "t2",
         name: "Cổ Mộc Huyền Địa",
+        slug: "co-moc-huyen-dia",
         category: "tu-giac",
         categoryLabel: "Tứ Giác",
         images: [
@@ -75,6 +80,7 @@ const productsData = [
     {
         id: "t3",
         name: "Lục Địa U Tuyền",
+        slug: "luc-dia-u-tuyen",
         category: "tu-giac",
         categoryLabel: "Tứ Giác",
         images: [
@@ -86,6 +92,7 @@ const productsData = [
     {
         id: "t4",
         name: "Linh Môn U Cảnh",
+        slug: "linh-mon-u-canh",
         category: "tu-giac",
         categoryLabel: "Tứ Giác",
         images: [
@@ -100,9 +107,9 @@ const productsData = [
     {
         id: "d1",
         name: "Bạch Lộc U Lâm",
+        slug: "bach-loc-u-lam",
         category: "da-giac",
         categoryLabel: "Đa Giác",
-
         images: [
             "da-giac/d1-a.webp",
             "da-giac/d1-b.webp",
@@ -112,6 +119,7 @@ const productsData = [
     {
         id: "d2",
         name: "Thâm Cốc Vô Thanh",
+        slug: "tham-coc-vo-thanh",
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
@@ -123,6 +131,7 @@ const productsData = [
     {
         id: "d3",
         name: "Cơ Giới Tàn Lâm",
+        slug: "co-gioi-tan-lam",
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
@@ -134,6 +143,7 @@ const productsData = [
     {
         id: "d4",
         name: "Lục Nguyên Tuyền Đạo",
+        slug: "luc-nguyen-tuyen-dao",
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
@@ -143,25 +153,27 @@ const productsData = [
         ]
     },
     {
-        id: "n1",
+        id: "d5",
         name: "Hồng Diệp Thương Lâm",
+        slug: "hong-diep-thuong-lam",
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
-            "da-giac/n1-a.webp",
-            "da-giac/n1-b.webp",
-            "da-giac/n1-c.webp"
+            "da-giac/d5-a.webp",
+            "da-giac/d5-b.webp",
+            "da-giac/d5-c.webp"
         ]
     },
     {
-        id: "n2",
+        id: "d6",
         name: "Thâm Sơn Đăng Lâu",
+        slug: "tham-son-dang-lau",
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
-            "da-giac/n2-a.webp",
-            "da-giac/n2-b.webp",
-            "da-giac/n2-c.webp"
+            "da-giac/d6-a.webp",
+            "da-giac/d6-b.webp",
+            "da-giac/d6-c.webp"
         ]
     },
 
@@ -170,9 +182,9 @@ const productsData = [
     {
         id: "b1",
         name: "Vạn Gia Đăng Hỏa",
+        slug: "van-gia-dang-hoa",
         category: "ban-can",
         categoryLabel: "Bán Cạn",
-
         images: [
             "ban-can/b1-a.webp",
             "ban-can/b1-b.webp",
@@ -182,6 +194,7 @@ const productsData = [
     {
         id: "b2",
         name: "Sương Kiều Cổ Độ",
+        slug: "suong-kieu-co-do",
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
@@ -193,6 +206,7 @@ const productsData = [
     {
         id: "b3",
         name: "Hắc Mộc Hoang Địa",
+        slug: "hac-moc-hoang-dia",
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
@@ -204,6 +218,7 @@ const productsData = [
     {
         id: "b4",
         name: "Tâm Viên Quy Phật",
+        slug: "tam-vien-quy-phat",
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
@@ -215,6 +230,7 @@ const productsData = [
     {
         id: "b5",
         name: "Lưu Căn Thanh Tuyền",
+        slug: "luu-can-thanh-tuyen",
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
@@ -226,6 +242,7 @@ const productsData = [
     {
         id: "b6",
         name: "Xích Diệp Thảo Nguyên",
+        slug: "xich-diep-thao-nguyen",
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
