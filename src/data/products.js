@@ -1,3 +1,92 @@
+// Rêu Bảo Tồn
+
+import r1a from "../assets/products/reu-bao-ton/r1-a.webp";
+import r1b from "../assets/products/reu-bao-ton/r1-b.webp";
+import r1c from "../assets/products/reu-bao-ton/r1-c.webp";
+
+import r2a from "../assets/products/reu-bao-ton/r2-a.webp";
+import r2b from "../assets/products/reu-bao-ton/r2-b.webp";
+import r2c from "../assets/products/reu-bao-ton/r2-c.webp";
+
+import r3a from "../assets/products/reu-bao-ton/r3-a.webp";
+import r3b from "../assets/products/reu-bao-ton/r3-b.webp";
+import r3c from "../assets/products/reu-bao-ton/r3-c.webp";
+
+import r4a from "../assets/products/reu-bao-ton/r4-a.webp";
+import r4b from "../assets/products/reu-bao-ton/r4-b.webp";
+import r4c from "../assets/products/reu-bao-ton/r4-c.webp";
+
+// Tứ Giác
+
+import t1a from "../assets/products/tu-giac/t1-a.webp";
+import t1b from "../assets/products/tu-giac/t1-b.webp";
+import t1c from "../assets/products/tu-giac/t1-c.webp";
+
+import t2a from "../assets/products/tu-giac/t2-a.webp";
+import t2b from "../assets/products/tu-giac/t2-b.webp";
+import t2c from "../assets/products/tu-giac/t2-c.webp";
+
+import t3a from "../assets/products/tu-giac/t3-a.webp";
+import t3b from "../assets/products/tu-giac/t3-b.webp";
+import t3c from "../assets/products/tu-giac/t3-c.webp";
+
+import t4a from "../assets/products/tu-giac/t4-a.webp";
+import t4b from "../assets/products/tu-giac/t4-b.webp";
+import t4c from "../assets/products/tu-giac/t4-c.webp";
+
+// Đa Giác
+
+import d1a from "../assets/products/da-giac/d1-a.webp";
+import d1b from "../assets/products/da-giac/d1-b.webp";
+import d1c from "../assets/products/da-giac/d1-c.webp";
+
+import d2a from "../assets/products/da-giac/d2-a.webp";
+import d2b from "../assets/products/da-giac/d2-b.webp";
+import d2c from "../assets/products/da-giac/d2-c.webp";
+
+import d3a from "../assets/products/da-giac/d3-a.webp";
+import d3b from "../assets/products/da-giac/d3-b.webp";
+import d3c from "../assets/products/da-giac/d3-c.webp";
+
+import d4a from "../assets/products/da-giac/d4-a.webp";
+import d4b from "../assets/products/da-giac/d4-b.webp";
+import d4c from "../assets/products/da-giac/d4-c.webp";
+
+import d5a from "../assets/products/da-giac/d5-a.webp";
+import d5b from "../assets/products/da-giac/d5-b.webp";
+import d5c from "../assets/products/da-giac/d5-c.webp";
+
+import d6a from "../assets/products/da-giac/d6-a.webp";
+import d6b from "../assets/products/da-giac/d6-b.webp";
+import d6c from "../assets/products/da-giac/d6-c.webp";
+
+// Bán Cạn
+
+import b1a from "../assets/products/ban-can/b1-a.webp";
+import b1b from "../assets/products/ban-can/b1-b.webp";
+import b1c from "../assets/products/ban-can/b1-c.webp";
+
+import b2a from "../assets/products/ban-can/b2-a.webp";
+import b2b from "../assets/products/ban-can/b2-b.webp";
+import b2c from "../assets/products/ban-can/b2-c.webp";
+
+import b3a from "../assets/products/ban-can/b3-a.webp";
+import b3b from "../assets/products/ban-can/b3-b.webp";
+import b3c from "../assets/products/ban-can/b3-c.webp";
+
+import b4a from "../assets/products/ban-can/b4-a.webp";
+import b4b from "../assets/products/ban-can/b4-b.webp";
+import b4c from "../assets/products/ban-can/b4-c.webp";
+
+import b5a from "../assets/products/ban-can/b5-a.webp";
+import b5b from "../assets/products/ban-can/b5-b.webp";
+import b5c from "../assets/products/ban-can/b5-c.webp";
+
+import b6a from "../assets/products/ban-can/b6-a.webp";
+import b6b from "../assets/products/ban-can/b6-b.webp";
+import b6c from "../assets/products/ban-can/b6-c.webp";
+
+
 const productsData = [
 
     // Rêu Bảo Tồn
@@ -9,9 +98,9 @@ const productsData = [
         category: "reu-bao-ton",
         categoryLabel: "Rêu Bảo Tồn",
         images: [
-            "reu-bao-ton/r1-a.webp",
-            "reu-bao-ton/r1-b.webp",
-            "reu-bao-ton/r1-c.webp"
+            r1a,
+            r1b,
+            r1c
         ]
     },
     {
@@ -21,9 +110,9 @@ const productsData = [
         category: "reu-bao-ton",
         categoryLabel: "Rêu Bảo Tồn",
         images: [
-            "reu-bao-ton/r2-a.webp",
-            "reu-bao-ton/r2-b.webp",
-            "reu-bao-ton/r2-c.webp"
+            r2a,
+            r2b,
+            r2c
         ]
     },
     {
@@ -33,9 +122,9 @@ const productsData = [
         category: "reu-bao-ton",
         categoryLabel: "Rêu Bảo Tồn",
         images: [
-            "reu-bao-ton/r3-a.webp",
-            "reu-bao-ton/r3-b.webp",
-            "reu-bao-ton/r3-c.webp"
+            r3a,
+            r3b,
+            r3c
         ]
     },
     {
@@ -45,9 +134,9 @@ const productsData = [
         category: "reu-bao-ton",
         categoryLabel: "Rêu Bảo Tồn",
         images: [
-            "reu-bao-ton/r4-a.webp",
-            "reu-bao-ton/r4-b.webp",
-            "reu-bao-ton/r4-c.webp"
+            r4a,
+            r4b,
+            r4c
         ]
     },
 
@@ -60,9 +149,9 @@ const productsData = [
         category: "tu-giac",
         categoryLabel: "Tứ Giác",
         images: [
-            "tu-giac/t1-a.webp",
-            "tu-giac/t1-b.webp",
-            "tu-giac/t1-c.webp"
+            t1a,
+            t1b,
+            t1c
         ]
     },
     {
@@ -72,9 +161,9 @@ const productsData = [
         category: "tu-giac",
         categoryLabel: "Tứ Giác",
         images: [
-            "tu-giac/t2-a.webp",
-            "tu-giac/t2-b.webp",
-            "tu-giac/t2-c.webp"
+            t2a,
+            t2b,
+            t2c
         ]
     },
     {
@@ -84,9 +173,9 @@ const productsData = [
         category: "tu-giac",
         categoryLabel: "Tứ Giác",
         images: [
-            "tu-giac/t3-a.webp",
-            "tu-giac/t3-b.webp",
-            "tu-giac/t3-c.webp"
+            t3a,
+            t3b,
+            t3c
         ]
     },
     {
@@ -96,9 +185,9 @@ const productsData = [
         category: "tu-giac",
         categoryLabel: "Tứ Giác",
         images: [
-            "tu-giac/t4-a.webp",
-            "tu-giac/t4-b.webp",
-            "tu-giac/t4-c.webp"
+            t4a,
+            t4b,
+            t4c
         ]
     },
     
@@ -111,9 +200,9 @@ const productsData = [
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
-            "da-giac/d1-a.webp",
-            "da-giac/d1-b.webp",
-            "da-giac/d1-c.webp"
+            d1a,
+            d1b,
+            d1c
         ]
     },
     {
@@ -123,9 +212,9 @@ const productsData = [
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
-            "da-giac/d2-a.webp",
-            "da-giac/d2-b.webp",
-            "da-giac/d2-c.webp"
+            d2a,
+            d2b,
+            d2c
         ]
     },
     {
@@ -135,9 +224,9 @@ const productsData = [
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
-            "da-giac/d3-a.webp",
-            "da-giac/d3-b.webp",
-            "da-giac/d3-c.webp"
+            d3a,
+            d3b,
+            d3c
         ]
     },
     {
@@ -147,9 +236,9 @@ const productsData = [
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
-            "da-giac/d4-a.webp",
-            "da-giac/d4-b.webp",
-            "da-giac/d4-c.webp"
+            d4a,
+            d4b,
+            d4c
         ]
     },
     {
@@ -159,9 +248,9 @@ const productsData = [
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
-            "da-giac/d5-a.webp",
-            "da-giac/d5-b.webp",
-            "da-giac/d5-c.webp"
+            d5a,
+            d5b,
+            d5c
         ]
     },
     {
@@ -171,9 +260,9 @@ const productsData = [
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
-            "da-giac/d6-a.webp",
-            "da-giac/d6-b.webp",
-            "da-giac/d6-c.webp"
+            d6a,
+            d6b,
+            d6c
         ]
     },
 
@@ -186,9 +275,9 @@ const productsData = [
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
-            "ban-can/b1-a.webp",
-            "ban-can/b1-b.webp",
-            "ban-can/b1-c.webp"
+            b1a,
+            b1b,
+            b1c
         ]
     },
     {
@@ -198,9 +287,9 @@ const productsData = [
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
-            "ban-can/b2-a.webp",
-            "ban-can/b2-b.webp",
-            "ban-can/b2-c.webp"
+            b2a,
+            b2b,
+            b2c
         ]
     },
     {
@@ -210,9 +299,9 @@ const productsData = [
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
-            "ban-can/b3-a.webp",
-            "ban-can/b3-b.webp",
-            "ban-can/b3-c.webp"
+            b3a,
+            b3b,
+            b3c
         ]
     },
     {
@@ -222,9 +311,9 @@ const productsData = [
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
-            "ban-can/b4-a.webp",
-            "ban-can/b4-b.webp",
-            "ban-can/b4-c.webp"
+            b4a,
+            b4b,
+            b4c
         ]
     },
     {
@@ -234,9 +323,9 @@ const productsData = [
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
-            "ban-can/b5-a.webp",
-            "ban-can/b5-b.webp",
-            "ban-can/b5-c.webp"
+            b5a,
+            b5b,
+            b5c
         ]
     },
     {
@@ -246,9 +335,9 @@ const productsData = [
         category: "ban-can",
         categoryLabel: "Bán Cạn",
         images: [
-            "ban-can/b6-a.webp",
-            "ban-can/b6-b.webp",
-            "ban-can/b6-c.webp"
+            b6a,
+            b6b,
+            b6c
         ]
     }
 ];
