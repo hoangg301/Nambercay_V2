@@ -25,10 +25,10 @@ function Navbar() {
 
             {menuOpen && (
                 <div className="nav-links">
-                    <Link to="/" onClick={closeMenu}>Home</Link>
-                    <Link to="/collection" onClick={closeMenu}>Collection</Link>
-                    <Link to="/about" onClick={closeMenu}>About</Link>
-                    <Link to="/contact" onClick={closeMenu}>Contact</Link>
+                    <Link to="/" onClick={closeMenu}>Khám Phá</Link>
+                    <Link to="/collection" onClick={closeMenu}>Bộ Sưu Tập</Link>
+                    <Link to="/about" onClick={closeMenu}>Giới Thiệu</Link>
+                    <Link to="/contact" onClick={closeMenu}>Liên Hệ</Link>
                 </div>
             )}
         </nav>
