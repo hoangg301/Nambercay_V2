@@ -1,22 +1,46 @@
-import { Link } from "react-router-dom";
-import { products } from "../data/products.js";
+import { Link, useParams } from "react-router-dom";
+import { products, categories } from "../data/products.js";
 import "../styles/Collection.css";
 
+
 function Collection() {
-  console.log(products);
+  const { category } = useParams();
+  const filteredProducts = category ? products.filter((product) => product.category === category) : products;
 
   return (
     <main className="collection">
       <section className="collection-header">
+        <nav className="category-tabs">
+          <Link
+            to="/collection"
+            className={`category-tab ${!category ? "active" : ""}`}
+          >
+            Tất Cả
+          </Link>
+
+          {categories.filter(item => item.id !== "all").map(item => (
+            <Link
+              key={item.id}
+              to={`/collection/${item.id}`}
+              className={`category-tab ${category === item.id ? "active" : ""}`}
+            >
+              {item.label}
+            </Link>
+          ))}
+        </nav>
         <h1 className="collection-title">
           Bộ Sưu Tập
         </h1>
-
-        <p className="collection-subtitle"></p>
+        <p className="collection-subtitle">
+          Đây là những tác phẩm tiêu biểu được tuyển chọn từ Nambercay.
+        </p> 
+        <p className="collection-subtitle">  
+          Nhiều mẫu Terrarium khác vẫn đang được lưu giữ và cập nhật trên Facebook, Instagram, Tiktok.
+        </p>
       </section>
 
       <section className="product-grid">
-        {products.map((product) => (
+        {filteredProducts.map((product) => (
           <Link
             key={product.id}
             to={`/collection/${product.category}/${product.slug}`}
