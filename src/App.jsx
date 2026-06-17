@@ -4,9 +4,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import Collection from "./pages/Collection";
-{/*
 import ProductDetail from "./pages/ProductDetail";
-*/}
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 
@@ -18,9 +16,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/collection" element={<Collection />} />
         <Route path="/collection/:category" element={<Collection />} />
-        {/*
-        <Route path="/collection/:category/:productId" element={<ProductDetail />} />
-        */}
+        <Route path="/collection/:category/:slug" element={<ProductDetail />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

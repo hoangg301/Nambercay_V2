@@ -92,8 +92,10 @@
     display: flex;
     gap: 12px;
     overflow-x: auto;
-    padding-bottom: 16px;
+    padding: 0 4px 16px;
     scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x proximity;
 }
 
 .category-tabs::-webkit-scrollbar {
@@ -107,11 +109,18 @@
     border-radius: 999px;
     border: 1px solid var(--color-border);
     color: var(--color-text-3);
-    transition: 0.24s;
+    transition: 
+        background-color 0.24s ease,
+        color 0.24s ease,
+        border-color 0.24s ease;
 }
 
 .category-tab.active {
     background-color: var(--color-accent);
     color: var(--color-text-2);
     border-color: var(--color-border);
+}
+
+.category-tab:active {
+    transform: scale(0.95);
 }
