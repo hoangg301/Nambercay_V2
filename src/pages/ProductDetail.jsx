@@ -2,6 +2,7 @@ import { useParams, useNavigate } from "react-router-dom";
 import { products } from "../data/products";
 import { useState, useEffect } from "react";
 import "../styles/ProductDetail.css";
+import { CONTACT } from "../data/contact";
 
 
 function ProductDetail() {
@@ -12,10 +13,29 @@ function ProductDetail() {
     const [touchStartX, setTouchStartX] = useState(null);
     const goPrev = () => {
         setCurrentIndex((prev) => prev === 0 ? product.images.length - 1 : prev - 1)
-    ;}
+    };
     const goNext = () => {
         setCurrentIndex((prev) => prev === product.images.length - 1 ? 0 : prev + 1)
-    }
+    };
+    const handleContact = async () => {
+        const message = `Xin chào, tôi muốn hỏi thêm về sản phẩm này:
+            
+            - ${product.name} -
+        
+            Link tham khảo:
+            ${window.location.href}`;
+        
+        try {
+            await navigator.clipboard.writeText(message);
+            
+            window.open(
+                CONTACT.messenger,
+                "_blank"
+            )
+        } catch {
+            alert("Không thể sao chép nội dung")
+        }
+    };
     const [isFullscreen, setIsFullscreen] = useState(false);
     useEffect(() => {
         if (isFullscreen) {
@@ -92,8 +112,14 @@ function ProductDetail() {
                 <p className="detail-description">
                     - Vui lòng liên hệ Nambercay để biết thêm thông tin về kích thước, giá thành hoặc thiết kế theo yêu cầu riêng.
                 </p>
-
-                <button className="contact-btn">
+                
+                <p className="contact-note">
+                    Nhấn nút bên dưới để mở Messenger. Thông tin sản phẩm sẽ được sao chép sẵn, bạn chỉ cần dán và gửi.
+                </p>
+                <button 
+                    className="contact-btn"
+                    onClick={handleContact}
+                >
                     Liên hệ về tác phẩm này
                 </button>
             </section>
