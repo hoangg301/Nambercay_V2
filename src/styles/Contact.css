@@ -1,0 +1,146 @@
+.contact-page {
+    padding: 24px 16px 48px;
+}
+
+.contact-header {
+    margin-bottom: 32px;
+}
+
+.contact-title {
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    color: var(--color-text-2);
+    margin-bottom: 12px;
+}
+
+.contact-subtitle {
+    line-height: 1.8;
+    color: var(--color-text-3);
+}
+
+/* Messenger */
+
+.messenger {
+    margin-bottom: 40px;
+}
+
+.messenger-card {
+    border: 1px solid var(--color-highlight);
+    background: var(--color-surface);
+    border-radius: 20px;
+    padding: 24px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.messenger-icon {
+    font-size: 2.5rem;
+    margin-bottom: 12px;
+    color: #0084FF;
+}
+
+.messenger-card h2 {
+    margin: 12px 0;
+    color: var(--color-text-2);
+}
+
+.messenger-card p {
+    color: var(--color-text-3);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.messenger-btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px 24px;
+    border-radius: 999px;
+    text-decoration: none;
+    background-color: var(--color-accent);
+    color: var(--color-text-2);
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.24s ease;
+}
+
+.messenger-btn:hover {
+    opacity: 0.9;
+}
+
+/* Social */
+
+.social-title {
+    margin-bottom: 16px;
+    color: var(--color-text-2);
+    font-size: 1.3rem;
+}
+
+.social-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.social-card {
+    border: 1px solid var(--color-border);
+    background: var(--color-surface);
+    border-radius: 16px;
+    padding: 20px;
+}
+
+.social-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.social-card-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+}
+
+.social-icon {
+    font-size: 1.8rem;
+}
+
+.fb-icon {
+    color: #1877F2;
+}
+
+.ig-icon {
+    color: #e1306c;
+}
+
+.tt-icon {
+    color: #181818;
+}
+
+.social-name {
+    color: var(--color-text-2);
+    margin: 0;
+    overflow-wrap: break-word;
+}
+
+.social-link {
+    flex-shrink: 0;
+    text-decoration: none;
+    color: var(--color-highlight);
+    font-size: 0.92rem;
+    font-weight: 600;
+    opacity: 1;
+    transition: opacity 0.24s ease;
+}
+
+.social-link:hover {
+    opacity: 0.75;
+}
+
+.social-description {
+    color: var(--color-text-3);
+    line-height: 1.7;
+    margin: 0;
+}
