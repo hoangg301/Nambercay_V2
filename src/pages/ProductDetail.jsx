@@ -18,12 +18,14 @@ function ProductDetail() {
         setCurrentIndex((prev) => prev === product.images.length - 1 ? 0 : prev + 1)
     };
     const handleContact = async () => {
-        const message = `Xin chào, tôi muốn hỏi thêm về sản phẩm này:
-            
-            - ${product.name} -
-        
-            Link tham khảo:
-            ${window.location.href}`;
+        const message = [
+            "Xin chào, tôi muốn hỏi thêm về sản phẩm này:",
+            "",
+            `- ${product.name} -`,
+            "",
+            "Link tham khảo:",
+            window.location.href
+        ].join("\n");
         
         try {
             await navigator.clipboard.writeText(message);

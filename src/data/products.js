@@ -195,8 +195,8 @@ const productsData = [
 
     {
         id: "d1",
-        name: "Bạch Lộc U Lâm",
-        slug: "bach-loc-u-lam",
+        name: "Lục Nguyên Tuyền Đạo",
+        slug: "luc-nguyen-tuyen-dao",
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [
@@ -231,8 +231,8 @@ const productsData = [
     },
     {
         id: "d4",
-        name: "Lục Nguyên Tuyền Đạo",
-        slug: "luc-nguyen-tuyen-dao",
+        name: "Bạch Lộc U Lâm",
+        slug: "bach-loc-u-lam",
         category: "da-giac",
         categoryLabel: "Đa Giác",
         images: [

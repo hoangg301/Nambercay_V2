@@ -5,24 +5,30 @@ import heroImg from "../assets/hero-img.webp";
 
 
 const highlights = [
-  { 
-    id: 1, 
-    name: "Linh Mộc Viên", 
-    categoryLabel: "Tứ Giác",
-    img: new URL('../assets/products/tu-giac/t1-a.webp', import.meta.url).href, 
+  {
+    id: 1,
+    name: "Tịnh Độ Linh Hoa",
+    categoryLabel: "Rêu Bảo Tồn",
+    img: new URL('../assets/products/reu-bao-ton/r1-a.webp', import.meta.url).href
   },
   { 
     id: 2, 
-    name: "Bạch Lộc U Lâm",
-    categoryLabel: "Đa Giác", 
-    img: new URL('../assets/products/da-giac/d1-a.webp', import.meta.url).href, 
+    name: "Linh Mộc Viên", 
+    categoryLabel: "Tứ Giác",
+    img: new URL('../assets/products/tu-giac/t1-a.webp', import.meta.url).href
   },
   { 
     id: 3, 
+    name: "Lục Nguyên Tuyền Đạo",
+    categoryLabel: "Đa Giác", 
+    img: new URL('../assets/products/da-giac/d1-a.webp', import.meta.url).href 
+  },
+  { 
+    id: 4, 
     name: "Vạn Gia Đăng Hỏa", 
     categoryLabel: "Bán Cạn",
-    img: new URL('../assets/products/ban-can/b1-a.webp', import.meta.url).href, 
-  },
+    img: new URL('../assets/products/ban-can/b1-a.webp', import.meta.url).href 
+  }
 ];
 
 function Home() {
@@ -155,6 +161,60 @@ function Home() {
         </div>
 
         {/* Feature 3 */}
+
+        <div className="feature-block">
+          <div className="feature-header">
+            <h2 className="feature-title">
+              Cách Đặt Hàng
+            </h2>
+          </div>
+          <div className="timeline">
+            <div className="timeline-item">
+              <div className="timeline-number">1</div>
+              <div className="timeline-content">
+                <p>
+                  Lựa chọn tác phẩm yêu thích của bạn
+                </p>
+              </div>
+            </div>
+            
+            <div className="timeline-item">
+              <div className="timeline-number">2</div>
+              <div className="timeline-content">
+                <p>
+                  Bấm nút "Liên hệ về tác phẩm này"
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-number">3</div>
+              <div className="timeline-content">
+                <p>
+                  Thông tin tác phẩm sẽ được tự động sao chép
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-number">4</div>
+              <div className="timeline-content">
+                <p>
+                  Dán thông tin vào tin nhắn rồi nhấn gửi
+                </p>
+              </div>
+            </div>
+
+            <div className="timeline-item">
+              <div className="timeline-number">5</div>
+              <div className="timeline-content">
+                <p>
+                  Trao đổi trực tiếp về chi tiết tác phẩm với Nambercay
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
         
       </section>
     </main>
