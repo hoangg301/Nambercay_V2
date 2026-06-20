@@ -1,0 +1,71 @@
+.footer {
+    padding: 30px 20px;
+    border-top: 1px solid var(--color-border);
+    background-color: #2a2a2a;
+}
+
+.footer-logo {
+    font-family: "Playfair Display", serif;
+    color: var(--color-text-2);
+    margin-bottom: 24px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.footer-section {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-title {
+    color: var(--color-text-2);
+    font-size: 1rem;
+    margin-bottom: 6px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: var(--color-text-3);
+    transition: color 0.24s ease;
+}
+
+.footer-section a:hover {
+    color: var(--color-highlight);
+}
+
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.footer-socials a {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.24s ease;
+}
+
+.footer-socials a:hover {
+    transform: translateY(-2px);
+}
+
+.mess-icon {
+    color: #0084ff;
+}
+
+.fb-icon {
+    color: #1877f2;
+}
+
+.footer-copyright {
+    text-align: center;
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+}

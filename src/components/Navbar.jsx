@@ -5,9 +5,8 @@ import logo from '../assets/logo.webp';
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
-    
     const closeMenu = () => setMenuOpen(false);
-  
+
     return (
         <nav className="navbar">
             <div className="brand">
@@ -32,7 +31,7 @@ function Navbar() {
                 </div>
             )}
         </nav>
-  );
+    );
 }
 
 export default Navbar;
