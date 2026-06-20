@@ -7,13 +7,12 @@
 .footer-logo {
     font-family: "Playfair Display", serif;
     color: var(--color-text-2);
-    margin-bottom: 24px;
 }
 
 .footer-content {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 24px;
+    padding: 24px;
 }
 
 .footer-section {
@@ -68,4 +67,27 @@
     text-align: center;
     color: var(--color-text-muted);
     font-size: 0.9rem;
+}
+
+/* Responsive */
+
+@media (min-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+        gap: 16px;
+        padding: 24px 64px;
+    }
+
+    .footer-section {
+        flex-direction: row;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .footer-socials {
+        flex-direction: row;
+        gap: 48px;
+    }
+
 }

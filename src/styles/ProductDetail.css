@@ -152,6 +152,7 @@
     border: none;
     color: white;
     font-size: 2rem;
+    font-weight: 600;
     cursor: pointer;
 }
 
@@ -166,6 +167,7 @@
     background: rgba(255, 255, 255, 0.1);
     color: white;
     font-size: 2rem;
+    font-weight: 600;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -192,4 +194,35 @@
     font-size: 0.92rem;
     border-top: 2px solid var(--color-highlight);
     padding-top: 6px;
+}
+
+/* Responsive */
+
+@media (min-width: 768px) {
+
+    .product-detail {
+        padding: 32px 24px 48px;
+    }
+
+    .back-btn {
+        font-size: 1.3rem;
+    }
+
+    .main-image img {
+        width: 78%;
+    }
+
+    .thumbnail-btn {
+        width: 120px;
+    }
+
+    .fullscreen-image {
+        max-width: 96%;
+    }
+
+    .fullscreen-nav-prev, .fullscreen-nav-next {
+        width: 56px;
+        height: 56px;
+    }
+
 }

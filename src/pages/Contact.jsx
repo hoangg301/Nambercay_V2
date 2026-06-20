@@ -13,7 +13,7 @@ function Contact() {
   };
 
   return (
-    <main className="contact-page">
+    <main className="contact">
       <section className="contact-header">
         <h1 className="contact-title">
           Liên Hệ Nambercay  

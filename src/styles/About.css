@@ -73,6 +73,8 @@
 .journey-card {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 12px;
 }
 
@@ -87,11 +89,13 @@
     border: none;
     background: none;
     cursor: zoom-in;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .journey-img-btn img {
     width: 94%;
-    margin: auto;
     aspect-ratio: 4/3;
     object-fit: cover;
     border-radius: 8px;
@@ -176,4 +180,22 @@
     color: white;
     font-size: 2rem;
     cursor: pointer;
+}
+
+/* Responsive */
+
+@media (min-width: 768px) {
+
+    .about {
+        padding: 32px 24px 48px;
+    }
+
+    .debut-img {
+        width: 86%;
+    }
+
+    .journey-img-btn {
+        width: 88%;
+    }
+
 }

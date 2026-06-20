@@ -124,3 +124,18 @@
 .category-tab:active {
     transform: scale(0.95);
 }
+
+/* Responsive */
+
+@media (min-width: 768px) {
+    
+    .collection {
+        padding: 48px 24px;
+    }
+    
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 32px;
+    }
+
+}
