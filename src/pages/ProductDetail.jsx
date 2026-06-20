@@ -85,6 +85,7 @@ function ProductDetail() {
                     <img
                         src={product.images[currentIndex]}
                         alt={product.name}
+                        loading="lazy"
                     />
                 </div>
 
@@ -98,6 +99,7 @@ function ProductDetail() {
                             <img
                                 src={product.images[index]}
                                 alt={`${product.name} ${index + 1}`}
+                                loading="lazy"
                             />
                         </button>
                     ))}

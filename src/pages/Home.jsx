@@ -59,8 +59,8 @@ function Home() {
             className="hero-btn"
             onClick={() => {
               document.getElementById('features').scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
+                behavior: "smooth",
+                block: "start"
               });
             }}
           >
@@ -220,4 +220,5 @@ function Home() {
     </main>
   );
 }
+
 export default Home;

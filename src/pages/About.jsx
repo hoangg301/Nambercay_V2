@@ -35,6 +35,7 @@ function About() {
         <img 
           src={studioImg}
           alt="Studio Nambercay"
+          loading="lazy"
           className="debut-img"
           onClick={() => setFullscreenImg(studioImg)}
         />
@@ -75,6 +76,7 @@ function About() {
               <img
                 src={beforeImg}
                 alt="Day One"
+                loading="lazy"
               />
             </button>
             <span className="journey-label">
@@ -95,6 +97,7 @@ function About() {
               <img
                 src={afterImg}
                 alt="One Day"
+                loading="lazy"
               />
             </button>
             <span className="journey-label">

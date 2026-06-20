@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-
+import TopScrolling from "./components/TopScrolling";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -11,6 +11,7 @@ import Contact from "./pages/Contact";
 function App() {
   return (
     <BrowserRouter>
+      <TopScrolling />
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -24,4 +25,5 @@ function App() {
     </BrowserRouter>
   );
 }
+
 export default App;
