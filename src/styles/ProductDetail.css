@@ -214,11 +214,17 @@
 
     .thumbnail-list {
         flex-direction: column;
-        padding: 0 30px;
+        padding: 0 24px;
+        gap: 10px;
+        flex-shrink: 0;
+    }
+
+    .main-image {
+        flex: 1;
     }
 
     .main-image img {
-        width: 80%;
+        width: 85%;
     }
 
     .thumbnail-btn {
