@@ -208,12 +208,21 @@
         font-size: 1.3rem;
     }
 
+    .detail-gallery {
+        flex-direction: row;
+    }
+
+    .thumbnail-list {
+        flex-direction: column;
+        padding: 0 30px;
+    }
+
     .main-image img {
-        width: 78%;
+        width: 80%;
     }
 
     .thumbnail-btn {
-        width: 120px;
+        width: 150px;
     }
 
     .fullscreen-image {

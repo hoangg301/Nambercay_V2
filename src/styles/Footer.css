@@ -7,6 +7,7 @@
 .footer-logo {
     font-family: "Playfair Display", serif;
     color: var(--color-text-2);
+    text-align: center;
 }
 
 .footer-content {
