@@ -85,7 +85,7 @@
 
 .hero-btn:active {
     background-color: var(--color-highlight);
-    transform: scale(0.94);
+    transform: scale(0.9);
 }
 
 /* Feature 1 */
@@ -170,6 +170,7 @@
     display: block;
     transform: scale(1.1);
     transition: transform 0.56s ease;
+    cursor: pointer;
 }
 
 .card-img-wrap.open .card-img {
@@ -321,12 +322,8 @@
 
 @media (min-width: 768px) {
     
-    .hero-heading {
-        margin-right: 40%;
-    }
-
     .hero-sub {
-        margin-left: 55%;
+        margin-right: 0;
     }
 
     .feature-link {
@@ -362,6 +359,184 @@
     .timeline {
         width: 75%;
         margin: auto;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .hero-img-wrap {
+        position: absolute;
+        right: 0;
+        width: 60%;
+        height: 100%;
+    }
+
+    .hero-img {
+        object-position: 80% center;
+    }
+
+    .hero-overlay {
+        position: absolute;
+        inset: 0;
+        background:
+            linear-gradient(
+                105deg,
+                #162a1a 0%,
+                #162a1a 40%,
+                rgba(22, 42, 26, 0.96) 48%,
+                rgba(22, 42, 26, 0.82) 53%,
+                rgba(22, 42, 26, 0.54) 58%,
+                rgba(22, 42, 26, 0.25) 63%,
+                transparent 70%
+            );
+
+        z-index: 1;
+    }
+
+    .intro {
+        width: 40%;
+    }
+
+    .hero-content {
+        width: 40%;
+        height: 75%;
+        z-index: 2;
+        justify-content: space-evenly;
+        padding: 50px;
+    }
+
+    .hero-heading {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .hero-sub {
+        margin-left: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hero-btn {
+        padding: 16px 36px;
+    }
+
+    .feature-link {
+        padding: 12px 24px;
+    }
+
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        width: 100%;
+        border: none;
+        overflow: visible;
+        padding: 16px 32px;
+    }
+
+    .card-img-wrap, .card-img-wrap.open {
+        max-height: none;
+        opacity: 1;
+        overflow: visible;
+    }
+
+    .card-item {
+        border: 1px solid var(--color-border);
+        border-radius: 16px;
+        overflow: hidden;
+        background: var(--color-surface);
+        transition: transform 0.24s ease, border-color 0.24s ease;
+    }
+
+    .card-item:hover {
+        border-color: var(--color-accent);
+    }
+
+    .card-img {
+        transform: none;
+        aspect-ratio: 3/4;
+        transition: transform 0.24s ease;
+    }
+
+    .card-item:hover .card-img:hover {
+        transform: scale(1.05);
+    }
+
+    .card-arrow {
+        display: none;
+    }
+
+    .card-category {
+        padding: 16px 0 0;
+        display: block;
+    }
+
+    .card-btn.active {
+        justify-content: center;
+        text-align: center;
+        border-top: none;
+        cursor: default;
+        padding: 12px 20px 16px;
+        background: transparent;
+        color: var(--color-text-3);
+        font-size: 1.1rem;
+    }
+
+    .why-card-container {
+        padding: 16px 32px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 24px;
+    }
+
+    .why-card {
+        padding: 20px 30px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .why-icon {
+        font-size: 1.8rem;
+    }
+    
+    .why-card-title {
+        font-size: 1.4rem;
+        margin-left: 12px;
+    }
+
+    .why-card-body {
+        padding: 16px 6px 4px;
+    }
+
+    .timeline {
+        padding: 16px 32px;
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+    }
+
+    .timeline-item {
+        flex-direction: column;
+    }
+
+    .timeline-item:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        left: calc(50% + 12px);
+        top: 18px;
+        width: calc(100% + 24px);
+        height: 5px;
+        background: var(--color-accent);
+    }
+
+    .timeline-number {
+        margin: 0 auto 0;
+    }
+
+    .timeline-content {
+        padding: 12px 36px;
+        text-align: center;
     }
 
 }

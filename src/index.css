@@ -24,6 +24,14 @@ html {
 
 }
 
+@media (min-width: 1600px) {
+  
+  html {
+    font-size: 22px;
+  }
+
+}
+
 :root {
   --color-bg: #162a1a;
 --color-surface: #2a4a30;
