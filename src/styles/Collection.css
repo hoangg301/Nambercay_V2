@@ -37,7 +37,7 @@
 
 .product-card:hover {
     border-color: var(--color-highlight);
-    transform: translateY(-4px);
+    transform: translateY(-6px);
 }
 
 .product-img-wrap {
@@ -54,7 +54,7 @@
 }
 
 .product-card:hover .product-img {
-    transform: scale(1.05);
+    transform: scale(1.1);
 }
 
 .product-info {
@@ -135,7 +135,18 @@
     
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
-        gap: 32px;
+        gap: 30px;
+        padding: 12px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+        padding: 12px 24px;
     }
 
 }

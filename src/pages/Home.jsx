@@ -222,7 +222,7 @@ function Home() {
               <div className="timeline-number">3</div>
               <div className="timeline-content">
                 <p>
-                  Thông tin tác phẩm sẽ tự động sao chép
+                  Thông tin tác phẩm sẽ được tự động sao chép
                 </p>
               </div>
             </div>

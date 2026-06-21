@@ -64,6 +64,10 @@
     justify-content: space-evenly;
 }
 
+.thumbnail-list-desktop {
+    display: none;
+}
+
 .thumbnail-btn {
     width: 80px;
     aspect-ratio: 1;
@@ -92,7 +96,7 @@
     margin-top: 24px;
 }
 
-.detail-description {
+.detail-description p {
     line-height: 1.8;
     font-family: "Playfair Display", serif;
     font-size: 1.08rem;
@@ -223,10 +227,6 @@
         flex: 1;
     }
 
-    .main-image img {
-        width: 85%;
-    }
-
     .thumbnail-btn {
         width: 150px;
     }
@@ -238,6 +238,40 @@
     .fullscreen-nav-prev, .fullscreen-nav-next {
         width: 56px;
         height: 56px;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .detail-container {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 30px;
+    }
+
+    .detail-gallery {
+        flex-direction: column;
+    }
+
+    .thumbnail-list {
+        display: none;
+    }
+
+    .thumbnail-list-desktop {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    .detail-info {
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .thumbnail-btn {
+        width: 180px;
     }
 
 }

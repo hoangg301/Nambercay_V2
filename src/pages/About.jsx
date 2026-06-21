@@ -32,13 +32,14 @@ function About() {
         <p className="about-subtitle">
           Một góc xanh trong phòng - tạo nên từ những hệ sinh thái thu nhỏ.
         </p>
-        <img 
-          src={studioImg}
-          alt="Studio Nambercay"
-          loading="lazy"
-          className="debut-img"
-          onClick={() => setFullscreenImg(studioImg)}
-        />
+        <div className="debut-img">
+          <img 
+            src={studioImg}
+            alt="Studio Nambercay"
+            loading="lazy"
+            onClick={() => setFullscreenImg(studioImg)}
+          />
+        </div>
       </section>
 
       {/* Story */}
@@ -47,15 +48,27 @@ function About() {
         <h2 className="section-title">
           Khởi Nguồn
         </h2>
-        <p>
-          Mọi thứ bắt đầu từ một suy nghĩ: mang thêm một chút thiên nhiên vào không gian sống.
-        </p>
-        <p>
-          Những thử nghiệm đầu tiên với cây, đá và rêu, sở thích ấy dần trở thành niềm vui mỗi ngày.
-        </p>
-        <p>
-          Qua thời gian, góc nhỏ ấy phát triển thành nơi để sáng tạo, chăm sóc và tạo nên thiên nhiên thu nhỏ bằng tay.
-        </p>
+        <div className="story-container">
+          <div className="story-text">
+            <p>
+              Mọi thứ bắt đầu từ một suy nghĩ: mang thêm một chút thiên nhiên vào không gian sống.
+            </p>
+            <p>
+              Những thử nghiệm đầu tiên với cây, đá và rêu, sở thích ấy dần trở thành niềm vui mỗi ngày.
+            </p>
+            <p>
+              Qua thời gian, góc nhỏ ấy phát triển thành nơi để sáng tạo, chăm sóc và tạo nên thiên nhiên thu nhỏ bằng tay.
+            </p>
+          </div>
+          <div className="debut-img-desktop">
+            <img 
+              src={studioImg}
+              alt="Studio Nambercay"
+              loading="lazy"
+              onClick={() => setFullscreenImg(studioImg)}
+            />
+          </div>
+        </div>
       </section>
 
       {/* D1 - 1D */}

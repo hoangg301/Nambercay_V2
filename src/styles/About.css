@@ -24,13 +24,21 @@
 }
 
 .debut-img {
+    width: 100%;
+    display: flex;
+}
+
+.debut-img img {
     width: 92%;
     margin: auto;
     aspect-ratio: 4 / 3;
     object-fit: cover;
     border-radius: 12px;
-    display: block;
     cursor: zoom-in;
+}
+
+.debut-img-desktop {
+    display: none;
 }
 
 /* Story */
@@ -190,12 +198,64 @@
         padding: 32px 24px 48px;
     }
 
-    .debut-img {
+    .debut-img img {
         width: 86%;
     }
 
     .journey-img-btn {
         width: 88%;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .about {
+        padding: 48px 32px;
+    }
+
+    .debut-img {
+        display: none;
+    }
+
+    .debut-img-desktop {
+        display: flex;
+    }
+
+    .debut-img-desktop img {
+        width: 92%;
+        margin: auto;
+        aspect-ratio: 16/9;
+        object-position: center;
+        object-fit: cover;
+        border-radius: 12px;
+        cursor: zoom-in;
+    }
+
+    .story-container {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        gap: 30px;
+    }
+
+    .journey-grid {
+        padding: 20px 12px 8px;
+    }
+
+    .journey-label {
+        margin-top: 12px;
+    }
+
+    .cta-actions {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+
+    .cta-btn {
+        width: 90%;
+        margin: auto;
+        padding: 12px 0;
     }
 
 }

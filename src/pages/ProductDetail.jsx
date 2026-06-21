@@ -77,56 +77,78 @@ function ProductDetail() {
                 </p>
             </section>
 
-            <section className="detail-gallery">
-                <div 
-                    className="main-image"
-                    onClick={() => setIsFullscreen(true)}
-                >
-                    <img
-                        src={product.images[currentIndex]}
-                        alt={product.name}
-                        loading="lazy"
-                    />
-                </div>
+            <div className="detail-container">
+                <section className="detail-gallery">
+                    <div 
+                        className="main-image"
+                        onClick={() => setIsFullscreen(true)}
+                    >
+                        <img
+                            src={product.images[currentIndex]}
+                            alt={product.name}
+                            loading="lazy"
+                        />
+                    </div>
 
-                <div className="thumbnail-list">
-                    {[2, 0, 1].map((index) => (
-                        <button
-                            key={index}
-                            className={`thumbnail-btn ${currentIndex === index ? "active" : ""}`}
-                            onClick={() => setCurrentIndex(index)}
+                    <div className="thumbnail-list">
+                        {[2, 0, 1].map((index) => (
+                            <button
+                                key={index}
+                                className={`thumbnail-btn ${currentIndex === index ? "active" : ""}`}
+                                onClick={() => setCurrentIndex(index)}
+                            >
+                                <img
+                                    src={product.images[index]}
+                                    alt={`${product.name} ${index + 1}`}
+                                    loading="lazy"
+                                />
+                            </button>
+                        ))}
+                    </div>
+                </section>
+
+                <section className="detail-info">
+                    <div className="thumbnail-list-desktop">
+                        {[2, 0, 1].map((index) => (
+                            <button
+                                key={index}
+                                className={`thumbnail-btn ${currentIndex === index ? "active" : ""}`}
+                                onClick={() => setCurrentIndex(index)}
+                            >
+                                <img
+                                    src={product.images[index]}
+                                    alt={`${product.name} ${index + 1}`}
+                                    loading="lazy"
+                                />
+                            </button>
+                        ))}
+                    </div>
+                    
+                    <div className="detail-description">
+                        <p className="detail-description">
+                            - Mỗi bể Terrarium đều được chế tác thủ công.
+                        </p>
+                        <p className="detail-description">
+                            - Sản phẩm thực tế có thể khác đôi chút so với hình ảnh mẫu.
+                        </p>
+                        <p className="detail-description">
+                            - Vui lòng liên hệ Nambercay để biết thêm thông tin về kích thước, giá thành hoặc thiết kế theo yêu cầu riêng.
+                        </p>
+                    </div>
+                    
+                    <div className="detail-contact">
+                        <p className="contact-note">
+                            Nhấn nút bên dưới để mở Messenger. Thông tin sản phẩm sẽ được sao chép sẵn, bạn chỉ cần dán và gửi.
+                        </p>
+                        <button 
+                            className="contact-btn"
+                            onClick={handleContact}
                         >
-                            <img
-                                src={product.images[index]}
-                                alt={`${product.name} ${index + 1}`}
-                                loading="lazy"
-                            />
+                            Liên hệ về tác phẩm này
                         </button>
-                    ))}
-                </div>
-            </section>
-
-            <section className="detail-info">
-                <p className="detail-description">
-                    - Mỗi bể Terrarium đều được chế tác thủ công.
-                </p>
-                <p className="detail-description">
-                    - Sản phẩm thực tế có thể khác đôi chút so với hình ảnh mẫu.
-                </p>
-                <p className="detail-description">
-                    - Vui lòng liên hệ Nambercay để biết thêm thông tin về kích thước, giá thành hoặc thiết kế theo yêu cầu riêng.
-                </p>
-                
-                <p className="contact-note">
-                    Nhấn nút bên dưới để mở Messenger. Thông tin sản phẩm sẽ được sao chép sẵn, bạn chỉ cần dán và gửi.
-                </p>
-                <button 
-                    className="contact-btn"
-                    onClick={handleContact}
-                >
-                    Liên hệ về tác phẩm này
-                </button>
-            </section>
+                    </div>
+                </section>
+            </div>
 
             {isFullscreen && (
                 <div
