@@ -1,4 +1,5 @@
 import { CONTACT, socialLinks } from "../data/contact";
+import { useEffect } from "react";
 import { FaFacebook, FaInstagram, FaFacebookMessenger } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import "../styles/Contact.css";
@@ -12,6 +13,10 @@ function Contact() {
     odaybanbexinh: <SiTiktok className="tt-icon" />
   };
 
+  useEffect(() => {
+    document.title = "Liên Hệ | Nambercay";
+  }, []);
+
   return (
     <main className="contact">
       <section className="contact-header">
@@ -22,7 +27,7 @@ function Contact() {
           Ngoài những tác phẩm được giới thiệu trên website, Nambercay vẫn thường xuyên cập nhật nhiều mẫu Terrarium mới trên các nền tảng mạng xã hội dưới đây.
         </p>
       </section>    
-      
+
       <section className="messenger">
         <div className="messenger-card">
           <div className="messenger-icon">

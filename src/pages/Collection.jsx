@@ -1,4 +1,5 @@
 import { Link, useParams } from "react-router-dom";
+import { useEffect } from "react";
 import { products, categories } from "../data/products.js";
 import "../styles/Collection.css";
 
@@ -6,6 +7,14 @@ import "../styles/Collection.css";
 function Collection() {
   const { category } = useParams();
   const filteredProducts = category ? products.filter((product) => product.category === category) : products;
+
+  useEffect(() => {
+    if (category) {
+      document.title = `${category} | Nambercay`;
+    } else {
+      document.title = "Bộ Sưu Tập | Nambercay";
+    }
+  }, [category]);
 
   return (
     <main className="collection">

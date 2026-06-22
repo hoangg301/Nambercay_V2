@@ -52,6 +52,10 @@ function Home() {
 
     return () => window.removeEventListener("resize", handleResize);
   }, []);
+
+  useEffect(() => {
+    document.title = "Terrarium Thủ Công | Nambercay";
+  }, []);
   
   return (
     <main>
@@ -62,7 +66,7 @@ function Home() {
         <div className="hero-img-wrap">
           <img 
             src={heroImg} 
-            alt="Hero Image"
+            alt="Terrarium"
             className="hero-img"
             loading="eager"
           />

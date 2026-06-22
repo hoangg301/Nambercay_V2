@@ -8,6 +8,7 @@ import "../styles/About.css";
 
 function About() {
   const [fullscreenImg, setFullscreenImg] = useState(null);
+  
   useEffect(() => {
     if (fullscreenImg) {
       document.body.style.overflow = "hidden";
@@ -18,7 +19,11 @@ function About() {
     return () => {
       document.body.style.overflow = "";
     }
-  }, [fullscreenImg])
+  }, [fullscreenImg]);
+
+  useEffect(() => {
+    document.title = "Giới Thiệu | Nambercay";
+  }, []);
   
   return (
     <main className="about">

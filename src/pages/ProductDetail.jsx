@@ -39,6 +39,7 @@ function ProductDetail() {
         }
     };
     const [isFullscreen, setIsFullscreen] = useState(false);
+    
     useEffect(() => {
         if (isFullscreen) {
             document.body.style.overflow = "hidden";
@@ -51,13 +52,22 @@ function ProductDetail() {
         }
     }, [isFullscreen]);
 
+    useEffect(() => {
+        if (!product) {
+            document.title = "Không tìm thấy sản phẩm | Nambercay";
+            return;
+        };
+
+        document.title = `${product.name} | Nambercay`;
+    }, [product]);
+
     if (!product) {
         return (
-            <main className="product-detail">
-                <h1>Không tìm thấy sản phẩm</h1>;
+            <main className="not-found">
+                <h2>Sản phẩm không tồn tại hoặc đã bị xóa.</h2>
             </main>
         )
-    }
+    };
 
     return (
         <main className="product-detail">
