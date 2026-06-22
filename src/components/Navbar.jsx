@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../styles/Navbar.css';
 import logo from '../assets/logo.webp';
 
@@ -22,14 +22,36 @@ function Navbar() {
                 {menuOpen ? '✕' : '☰'}
             </button>
 
-            {menuOpen && (
-                <div className="nav-links">
-                    <Link to="/" onClick={closeMenu}>Khám Phá</Link>
-                    <Link to="/collection" onClick={closeMenu}>Bộ Sưu Tập</Link>
-                    <Link to="/about" onClick={closeMenu}>Giới Thiệu</Link>
-                    <Link to="/contact" onClick={closeMenu}>Liên Hệ</Link>
-                </div>
-            )}
+            <div className={`nav-links ${menuOpen ? "open" : ""}`}>
+                <NavLink 
+                    to="/" 
+                    onClick={closeMenu}
+                    className={({isActive}) => isActive ? "active" : ""}
+                >
+                    Khám Phá
+                </NavLink>
+                <NavLink 
+                    to="/collection" 
+                    onClick={closeMenu}
+                    className={({isActive}) => isActive ? "active" : ""}
+                >
+                    Bộ Sưu Tập
+                </NavLink>
+                <NavLink 
+                    to="/about" 
+                    onClick={closeMenu}
+                    className={({isActive}) => isActive ? "active" : ""}
+                >
+                    Giới Thiệu
+                </NavLink>
+                <NavLink 
+                    to="/contact" 
+                    onClick={closeMenu}
+                    className={({isActive}) => isActive ? "active" : ""}
+                >
+                    Liên Hệ
+                </NavLink>
+            </div>
         </nav>
     );
 }

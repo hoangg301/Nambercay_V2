@@ -154,3 +154,17 @@
     }
 
 }
+
+@media (min-width: 1200px) {
+
+    .contact {
+        padding: 48px 32px;
+    }
+
+    .social-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        padding: 12px;
+    }
+
+}

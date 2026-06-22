@@ -48,10 +48,14 @@
     left: 0;
     width: 100%;
     background-color: #243f29;
-    display: flex;
+    display: none;
     text-align: center;
     flex-direction: column;
-    animation: slideDown 0.24s ease;
+    animation: slideDown 0.32s ease;
+}
+
+.nav-links.open {
+    display: flex;
 }
 
 .nav-links a {
@@ -61,20 +65,104 @@
     font-size: 1.1rem;
     border-bottom: 1px solid var(--color-border);
     font-family: 'Inter', sans-serif;
+    cursor: pointer;
 }
 
-.nav-links a:hover {
-    background-color: var(--color-border);
+.nav-links a.active {
     color: var(--color-highlight);
+}
+
+.nav-links a.active:before {
+    content: "•";
+    margin-right: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
 }
 
 @keyframes slideDown {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateY(-16px);
     }
     to {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+@media (min-width: 768px) {
+
+    .navbar {
+        padding: 14px 36px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        width: auto;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 24px;
+        animation: none;
+    }
+
+    .nav-links a {
+        border-bottom: none;
+        padding: 0;
+        color: var(--color-text-2);
+        font-size: 1rem;
+        transition: color 0.24s ease;
+    }
+
+    .nav-links a.active:before {
+        margin-right: 8px;
+        font-size: 1.3rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+
+    .navbar {
+        padding: 14px 60px;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .nav-links {
+        position: static;
+        width: auto;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 56px;
+        animation: none;
+    }
+
+    .nav-links a {
+        border-bottom: none;
+        padding: 0;
+        color: var(--color-text-2);
+        font-size: 1rem;
+        transition: color 0.24s ease;
+    }
+
+    .nav-links a.active::before {
+        margin-right: 10px;
+        font-size: 1.4rem;
+    }
+
+    .nav-links a:hover {
+        background: none;
+        color: var(--color-text-muted);
+    }
+
 }

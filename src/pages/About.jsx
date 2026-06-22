@@ -35,7 +35,7 @@ function About() {
         <div className="debut-img">
           <img 
             src={studioImg}
-            alt="Studio Nambercay"
+            alt="Góc làm việc của Nambercay"
             loading="lazy"
             onClick={() => setFullscreenImg(studioImg)}
           />
@@ -88,7 +88,7 @@ function About() {
             >
               <img
                 src={beforeImg}
-                alt="Day One"
+                alt="Góc phòng ngày trước"
                 loading="lazy"
               />
             </button>
@@ -109,7 +109,7 @@ function About() {
             >
               <img
                 src={afterImg}
-                alt="One Day"
+                alt="Góc phòng bây giờ"
                 loading="lazy"
               />
             </button>

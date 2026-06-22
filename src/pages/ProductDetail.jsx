@@ -117,7 +117,7 @@ function ProductDetail() {
                             >
                                 <img
                                     src={product.images[index]}
-                                    alt={`${product.name} ${index + 1}`}
+                                    alt={`${product.name} góc độ ${index + 1}`}
                                     loading="lazy"
                                 />
                             </button>
