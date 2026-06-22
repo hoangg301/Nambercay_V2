@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import heroImg from "../assets/hero-img.webp";
+import useCanonical from "../data/canonical";
 
 
 const highlights = [
@@ -40,6 +41,8 @@ const highlights = [
 ];
 
 function Home() {
+  useCanonical("/");  
+
   const [activeId, setActiveId] = useState(1);
   const [isDesktop, setIsDesktop] = useState(() => window.innerWidth >= 1200);
   

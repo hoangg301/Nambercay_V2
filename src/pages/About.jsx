@@ -4,9 +4,12 @@ import studioImg from "../assets/studio.webp";
 import beforeImg from "../assets/before.webp";
 import afterImg from "../assets/after.webp";
 import "../styles/About.css";
+import useCanonical from "../data/canonical";
 
 
 function About() {
+  useCanonical("/about");
+  
   const [fullscreenImg, setFullscreenImg] = useState(null);
   
   useEffect(() => {

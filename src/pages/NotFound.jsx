@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import "../styles/NotFound.css";
+import useCanonical from "../data/canonical";
 
 function NotFound() {
+    useCanonical("/404");
+
     useEffect(() => {
         document.title = "404 | Nambercay";
     }, []);

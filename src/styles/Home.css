@@ -368,7 +368,7 @@
     .hero-img-wrap {
         position: absolute;
         right: 0;
-        width: 60%;
+        width: 50%;
         height: 100%;
     }
 
@@ -381,29 +381,29 @@
         inset: 0;
         background:
             linear-gradient(
-                105deg,
+                100deg,
                 #162a1a 0%,
-                #162a1a 40%,
-                rgba(22, 42, 26, 0.96) 48%,
-                rgba(22, 42, 26, 0.82) 53%,
-                rgba(22, 42, 26, 0.54) 58%,
-                rgba(22, 42, 26, 0.25) 63%,
-                transparent 70%
+                #162a1a 50%,
+                rgba(22, 42, 26, 0.96) 56%,
+                rgba(22, 42, 26, 0.82) 61%,
+                rgba(22, 42, 26, 0.54) 65%,
+                rgba(22, 42, 26, 0.25) 68%,
+                transparent 75%
             );
 
         z-index: 1;
     }
 
     .intro {
-        width: 40%;
+        width: 50%;
     }
 
     .hero-content {
-        width: 40%;
+        width: 50%;
         height: 75%;
         z-index: 2;
         justify-content: space-evenly;
-        padding: 50px;
+        padding: 60px;
     }
 
     .hero-heading {

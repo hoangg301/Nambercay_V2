@@ -2,9 +2,12 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 import { products, categories } from "../data/products.js";
 import "../styles/Collection.css";
+import useCanonical from "../data/canonical.js";
 
 
 function Collection() {
+  useCanonical("/collection");
+
   const { category } = useParams();
   const filteredProducts = category ? products.filter((product) => product.category === category) : products;
 

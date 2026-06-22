@@ -3,9 +3,12 @@ import { useEffect } from "react";
 import { FaFacebook, FaInstagram, FaFacebookMessenger } from "react-icons/fa";
 import { SiTiktok } from "react-icons/si";
 import "../styles/Contact.css";
+import useCanonical from "../data/canonical";
 
 
 function Contact() {
+  useCanonical("/contact");
+
   const icons = {
     facebook: <FaFacebook className="fb-icon" />,
     instagram: <FaInstagram className="ig-icon" />,

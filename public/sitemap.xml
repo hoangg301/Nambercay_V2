@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset
+    xmlns="http://www.sitemap.org/schemas/sitemap/0.9"
+>
+    
+    <url>
+        <loc>https://nambercay.vercel.app/</loc>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://nambercay.vercel.app/collection</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <url>
+        <loc>https://nambercay.vercel.app/collection/reu-bao-ton</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/tu-giac</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/da-giac</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/ban-can</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://nambercay.vercel.app/collection/reu-bao-ton/tinh-do-linh-hoa</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/reu-bao-ton/thien-hoa-ai-tinh</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/reu-bao-ton/xich-hoa-than-loc</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/reu-bao-ton/huyen-lam-linh-canh</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nambercay.vercel.app/collection/tu-giac/linh-moc-vien</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/tu-giac/co-moc-huyen-dia</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/tu-giac/luc-dia-u-tuyen</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/tu-giac/linh-mon-u-canh</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nambercay.vercel.app/collection/da-giac/luc-nguyen-tuyen-dao</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/da-giac/tham-coc-vo-thanh</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/da-giac/co-gioi-tan-lam</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/da-giac/bach-loc-u-lam</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/da-giac/hong-diep-thuong-lam</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/da-giac/tham-son-dang-lau</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nambercay.vercel.app/collection/ban-can/van-gia-dang-hoa</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/ban-can/suong-kieu-co-do</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/ban-can/hac-moc-hoang-dia</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/ban-can/tam-vien-quy-phat</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/ban-can/luc-can-thanh-tuyen</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://nambercay.vercel.app/collection/ban-can/xich-diep-thao-nguyen</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nambercay.vercel.app/about</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://nambercay.vercel.app/contact</loc>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+</urlset>

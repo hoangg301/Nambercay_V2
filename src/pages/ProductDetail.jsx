@@ -3,6 +3,7 @@ import { products } from "../data/products";
 import { useState, useEffect } from "react";
 import "../styles/ProductDetail.css";
 import { CONTACT } from "../data/contact";
+import useCanonical from "../data/canonical";
 
 
 function ProductDetail() {
@@ -11,6 +12,9 @@ function ProductDetail() {
     const product = products.find((item) => item.slug === slug);
     const [currentIndex, setCurrentIndex] = useState(2);
     const [touchStartX, setTouchStartX] = useState(null);
+    
+    useCanonical(product ? `/collection/${product.category}/${product.slug}` : "/404");
+    
     const goPrev = () => {
         setCurrentIndex((prev) => prev === 0 ? product.images.length - 1 : prev - 1)
     };
