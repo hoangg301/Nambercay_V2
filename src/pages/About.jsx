@@ -16,8 +16,17 @@ function About() {
       document.body.style.overflow = "";
     }
 
+    const handleKeyDown = (e) => {
+      if (e.key === "Escape") {
+        setFullscreenImg(null);
+      }
+    };
+    
+    window.addEventListener("keydown", handleKeyDown);
+
     return () => {
       document.body.style.overflow = "";
+      window.removeEventListener("keydown", handleKeyDown);
     }
   }, [fullscreenImg]);
 
@@ -157,6 +166,7 @@ function About() {
         >
           <button
             className="fullscreen-close"
+            aria-label="Đóng ảnh"
             onClick={(e) => {
               e.stopPropagation();
               setFullscreenImg(null)}

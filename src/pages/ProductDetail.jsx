@@ -41,14 +41,24 @@ function ProductDetail() {
     const [isFullscreen, setIsFullscreen] = useState(false);
     
     useEffect(() => {
-        if (isFullscreen) {
-            document.body.style.overflow = "hidden";
-        } else {
+        if (!isFullscreen) {
             document.body.style.overflow = "";
+            return;
         }
+
+        document.body.style.overflow = "hidden";
+
+        const handleKeyDown = (e) => {
+            if (e.key === "Escape") {
+                setIsFullscreen(false);
+            }
+        };
+
+        window.addEventListener("keydown", handleKeyDown);
 
         return () => {
             document.body.style.overflow = "";
+            window.removeEventListener("keydown", handleKeyDown);
         }
     }, [isFullscreen]);
 
@@ -167,12 +177,14 @@ function ProductDetail() {
                 >
                     <button
                         className="fullscreen-close"
+                        aria-label="Đóng ảnh"
                         onClick={() => setIsFullscreen(false)}
                     >
                         ✕
                     </button>
                     <button
                         className="fullscreen-nav-prev"
+                        aria-label="Chuyển ảnh trước đó"
                         onClick={(e) => {
                             e.stopPropagation();
                             goPrev();
@@ -182,6 +194,7 @@ function ProductDetail() {
                     </button>
                     <button
                         className="fullscreen-nav-next"
+                        aria-label="Chuyển ảnh tiếp theo"
                         onClick={(e) => {
                             e.stopPropagation();
                             goNext();
