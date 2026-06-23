@@ -72,6 +72,7 @@ function Home() {
             alt="Terrarium"
             className="hero-img"
             loading="eager"
+            fetchpriority="high"
           />
         </div>
         <div className="hero-overlay" />
