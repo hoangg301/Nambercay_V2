@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 
-const SITE_URL = "https://nambercay.vercel.app";
+const SITE_URL = "https://nambercay.id.vn";
 
 export default function useCanonical(path = "") {
     useEffect(() => {
