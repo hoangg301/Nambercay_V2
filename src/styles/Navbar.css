@@ -19,18 +19,18 @@
 .brand-logo {
     width: 40px;
     height: 40px;
-    object-fit: conver;
+    object-fit: contain;
     border-radius: 50%;
-    border: 1px solid #e7c255;
+    border: 1px solid #cba54d;
     background-color: var(--color-surface);
 }
 
 .brand-name {
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: 900;
     font-family: "Bodoni Moda-Variable", "Playfair Display", "Inter", sans-serif, serif;
     font-style: italic;
-    color: #e7c255;
+    color: #cba54d;
     text-decoration: none;
     letter-spacing: -0.01em;
     cursor: pointer;
@@ -38,7 +38,7 @@
 }
 
 .brand-name:hover {
-    color: #cba54d;
+    color: #e3d0ab;
 }
 
 .menu {
@@ -79,6 +79,10 @@
 .nav-links a.active {
     color: var(--color-highlight);
     text-decoration: underline;
+}
+
+.nav-cta {
+    display: none;
 }
 
 @keyframes slideDown {
@@ -150,6 +154,7 @@
         align-items: center;
         gap: 56px;
         animation: none;
+        margin-left: 10%;
     }
 
     .nav-links a {
@@ -163,6 +168,42 @@
     .nav-links a:hover {
         background: none;
         color: var(--color-text-muted);
+    }
+
+    .nav-cta {
+        display: flex;
+        gap: 40px;
+    }
+
+    .mess-icon {
+        font-size: 1.5rem;
+        color: #0084ff;
+    }
+
+    .fb-icon {
+        font-size: 1.5rem;
+        color: #1877f2;
+    }
+
+    .nav-cta a {
+        transition: transform 0.24s ease;
+    }
+
+    .nav-cta a:hover {
+        transform: translateY(-2px);
+    }
+
+}
+
+@media (min-width: 1600px) {
+
+    .nav-cta {
+        gap: 64px;
+    }
+
+    .nav-links {
+        margin-left: 15%;
+        gap: 80px;
     }
 
 }

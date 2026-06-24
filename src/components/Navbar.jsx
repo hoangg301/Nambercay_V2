@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
+import { CONTACT } from "../data/contact";
 import "../styles/Navbar.css";
+import { FaFacebook, FaFacebookMessenger } from "react-icons/fa";
 import logo from "../assets/logo.webp";
 import "@fontsource-variable/bodoni-moda/wght-italic.css";
 
@@ -63,6 +65,25 @@ function Navbar() {
                 >
                     Liên Hệ
                 </NavLink>
+            </div>
+
+            <div className="nav-cta">
+                <a
+                    href={CONTACT.messenger}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Messenger"
+                >
+                    <FaFacebookMessenger className="mess-icon" />
+                </a>
+                <a
+                    href={CONTACT.facebook}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Facebook"
+                >
+                    <FaFacebook className="fb-icon" />
+                </a>
             </div>
         </nav>
     );

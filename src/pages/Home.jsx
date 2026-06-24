@@ -72,7 +72,7 @@ function Home() {
             alt="Terrarium"
             className="hero-img"
             loading="eager"
-            fetchpriority="high"
+            fetchPriority="high"
           />
         </div>
         <div className="hero-overlay" />
@@ -191,7 +191,7 @@ function Home() {
                 <span className="why-card-title">Chất Liệu</span>
               </div>
               <p className="why-card-body">
-                  Đất thật. Đá thật. Rêu thật.<br />
+                  Đất thật, đá thật, rêu thật.<br />
                   Không có gì giả tạo ở đây.<br />
                   Chỉ có thiên nhiên là đang thực sự sống.
               </p>

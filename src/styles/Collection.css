@@ -164,3 +164,16 @@
     }
 
 }
+
+@media (min-width: 1600px) {
+    
+    .product-grid {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 50px;
+    }
+
+    .product-name {
+        min-height: 2rem;
+    }
+
+}

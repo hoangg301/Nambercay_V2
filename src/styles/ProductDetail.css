@@ -5,7 +5,7 @@
 .back-btn {
     background: none;
     border: none;
-    color: var(--color-text-muted);
+    color: var(--color-text-3);
     font-size: 1.12rem;
     line-height: 1.7;
     font-weight: 600;
@@ -270,6 +270,19 @@
 
     .thumbnail-btn {
         width: 180px;
+    }
+
+}
+
+@media (min-width: 1600px) {
+    
+    .thumbnail-btn {
+        aspect-ratio: 3/4;
+        width: 220px;
+    }
+
+    .detail-description {
+        padding: 12px 0;
     }
 
 }

@@ -92,7 +92,6 @@
     align-items: center;
     justify-content: space-between;
     gap: 12px;
-    margin-bottom: 12px;
 }
 
 .social-card-title {
@@ -100,10 +99,13 @@
     align-items: center;
     gap: 10px;
     min-width: 0;
+    margin-left: 8px;
 }
 
 .social-icon {
     font-size: 1.8rem;
+    display: flex;
+    align-items: center;
 }
 
 .fb-icon {
@@ -120,7 +122,6 @@
 
 .social-name {
     color: var(--color-text-2);
-    margin: 0;
     overflow-wrap: break-word;
 }
 
@@ -132,6 +133,7 @@
     font-weight: 600;
     opacity: 1;
     transition: opacity 0.24s ease;
+    margin-right: 12px;
 }
 
 .social-link:hover {
@@ -141,7 +143,7 @@
 .social-description {
     color: var(--color-text-3);
     line-height: 1.7;
-    margin: 0;
+    margin-top: 12px;
 }
 
 /* Responsive */
@@ -150,6 +152,14 @@
 
     .contact {
         padding: 32px 24px 48px;
+    }
+
+    .social-card-title {
+        margin-left: 12px;
+    }
+
+    .social-link {
+        margin-right: 18px;
     }
 
 }
@@ -164,6 +174,14 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 30px;
         padding: 12px;
+    }
+
+    .social-card-title {
+        margin-left: 16px;
+    }
+
+    .social-link {
+        margin-right: 24px;
     }
 
 }
