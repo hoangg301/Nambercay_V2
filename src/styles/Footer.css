@@ -5,7 +5,6 @@
 }
 
 .footer-logo {
-    font-family: "Playfair Display", serif;
     color: var(--color-text-2);
     text-align: center;
 }
@@ -25,7 +24,7 @@
 .footer-title {
     color: var(--color-text-2);
     font-size: 1rem;
-    margin-bottom: 6px;
+    height: 100%;
 }
 
 .footer-section a {
@@ -67,7 +66,7 @@
 .footer-copyright {
     text-align: center;
     color: var(--color-text-muted);
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 /* Responsive */
@@ -83,6 +82,11 @@
     .footer-section {
         flex-direction: row;
         gap: 32px;
+        align-items: center;
+    }
+    
+    .footer-title {
+        display: flex;
         align-items: center;
     }
 

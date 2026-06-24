@@ -6,7 +6,7 @@
 
 html {
   font-size: 16px;
-  font-family: "Playfair Display", serif;
+  font-family: 'Playfair Display', 'Inter', sans-serif, serif;
 }
 
 @media (min-width: 768px) {
@@ -34,20 +34,20 @@ html {
 }
 
 :root {
-  --color-bg: #162a1a;
---color-surface: #2a4a30;
---color-border: #3d7048;
---color-accent: #5a9e6a;
---color-highlight: #7ec98a;
---color-text-1: #edf4ee;
---color-text-2: #c8deca;
---color-text-3: #b0cfb5;
---color-text-muted: #8ab48f;
+  --color-bg: #1f3727;
+  --color-surface: #2e563a;
+  --color-border: #408252;
+  --color-accent: #58bb6c;
+  --color-highlight: #79db76;
+  --color-text-1: #f6faf5;
+  --color-text-2: #d8eed8;
+  --color-text-3: #c1e1c4;
+  --color-text-muted: #9acb9d;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text-2);
-  font-family: 'Inter', sans-serif;
+  font-family: 'Playfair Display', 'Inter', sans-serif, serif;
   min-height: 100vh;
 }

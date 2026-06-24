@@ -12,24 +12,33 @@
 .brand {
     display: flex;
     align-items: center;
-    gap: 20px;
     text-decoration: none;
+    gap: 12px;
 }
 
-.logo {
+.brand-logo {
     width: 40px;
     height: 40px;
-    object-fit: contain;
+    object-fit: conver;
     border-radius: 50%;
-    border: 2px solid #cc9327;
-    background-color: #395c3f;
+    border: 1px solid #e7c255;
+    background-color: var(--color-surface);
 }
 
 .brand-name {
     font-size: 1.4rem;
     font-weight: 600;
-    color: var(--color-text-1);
-    font-family: 'Playfair Display', serif;
+    font-family: "Bodoni Moda-Variable", "Playfair Display", "Inter", sans-serif, serif;
+    font-style: italic;
+    color: #e7c255;
+    text-decoration: none;
+    letter-spacing: -0.01em;
+    cursor: pointer;
+    transition: color 0.24s ease;
+}
+
+.brand-name:hover {
+    color: #cba54d;
 }
 
 .menu {
@@ -64,19 +73,12 @@
     color: var(--color-text-2);
     font-size: 1.1rem;
     border-bottom: 1px solid var(--color-border);
-    font-family: 'Inter', sans-serif;
     cursor: pointer;
 }
 
 .nav-links a.active {
     color: var(--color-highlight);
-}
-
-.nav-links a.active:before {
-    content: "•";
-    margin-right: 6px;
-    font-size: 1.2rem;
-    font-weight: 600;
+    text-decoration: underline;
 }
 
 @keyframes slideDown {
@@ -94,6 +96,10 @@
 
     .navbar {
         padding: 14px 36px;
+    }
+
+    .brand {
+        gap: 16px;
     }
 
     .menu {
@@ -119,17 +125,16 @@
         transition: color 0.24s ease;
     }
 
-    .nav-links a.active:before {
-        margin-right: 8px;
-        font-size: 1.3rem;
-    }
-
 }
 
 @media (min-width: 1200px) {
 
     .navbar {
         padding: 14px 60px;
+    }
+
+    .brand {
+        gap: 20px;
     }
 
     .menu {
@@ -153,11 +158,6 @@
         color: var(--color-text-2);
         font-size: 1rem;
         transition: color 0.24s ease;
-    }
-
-    .nav-links a.active::before {
-        margin-right: 10px;
-        font-size: 1.4rem;
     }
 
     .nav-links a:hover {

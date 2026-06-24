@@ -1,7 +1,9 @@
-import { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import '../styles/Navbar.css';
-import logo from '../assets/logo.webp';
+import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import "../styles/Navbar.css";
+import logo from "../assets/logo.webp";
+import "@fontsource-variable/bodoni-moda/wght-italic.css";
+
 
 function Navbar() {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -10,8 +12,18 @@ function Navbar() {
     return (
         <nav className="navbar">
             <div className="brand">
-                <img src={logo} alt="Nambercay Logo" className="logo" />
-                <span className="brand-name">Nambercay</span>
+                <img
+                    src={logo}
+                    alt="Logo Nambercay"
+                    loading="eager"
+                    className="brand-logo"
+                />
+                <Link 
+                    to="/"
+                    className="brand-name"
+                >
+                    Nambercay
+                </Link>
             </div>
 
             <button 
