@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import "../styles/Home.css";
 import heroImg from "../assets/hero-img.webp";
 import useCanonical from "../data/canonical";
+import heroImgDesktop from "../assets/hero-img-desktop.webp";
 
 
 const highlights = [
@@ -71,6 +72,13 @@ function Home() {
             src={heroImg} 
             alt="Terrarium"
             className="hero-img"
+            loading="eager"
+            fetchPriority="high"
+          />
+          <img
+            src={heroImgDesktop}
+            alt="Terrarium"
+            className="hero-img-desktop"
             loading="eager"
             fetchPriority="high"
           />

@@ -37,7 +37,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Messenger"
               >
-                <FaFacebookMessenger className="mess-icon" />
+                <FaFacebookMessenger className="footer-mess-icon" />
               </a>
               <a
                 href={CONTACT.facebook}
@@ -45,7 +45,7 @@ function Footer() {
                 rel="noopener noreferrer"
                 aria-label="Facebook"
               >
-                <FaFacebook className="fb-icon" />
+                <FaFacebook className="footer-fb-icon" />
               </a>
             </div>
           </div>

@@ -74,7 +74,7 @@ function Navbar() {
                     rel="noopener noreferrer"
                     aria-label="Messenger"
                 >
-                    <FaFacebookMessenger className="mess-icon" />
+                    <FaFacebookMessenger className="nav-mess-icon" />
                 </a>
                 <a
                     href={CONTACT.facebook}
@@ -82,7 +82,7 @@ function Navbar() {
                     rel="noopener noreferrer"
                     aria-label="Facebook"
                 >
-                    <FaFacebook className="fb-icon" />
+                    <FaFacebook className="nav-fb-icon" />
                 </a>
             </div>
         </nav>

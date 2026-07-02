@@ -55,12 +55,14 @@
     transform: translateY(-2px);
 }
 
-.mess-icon {
+.footer-mess-icon {
     color: #0084ff;
+    font-size: 1.3rem;
 }
 
-.fb-icon {
+.footer-fb-icon {
     color: #1877f2;
+    font-size: 1.3rem;
 }
 
 .footer-copyright {
